@@ -30,7 +30,7 @@
 #define HRM_TAP_TERM   200   /* max tap window */
 #define HRM_MIN_HOLD   120   /* minimum hold before hold is allowed */
 
-hrm_left: hrm_left {
+&hrm_left {
     compatible = "zmk,behavior-hold-tap";
     label = "HRM_LEFT";
     bindings = <&kp>, <&kp>;
@@ -53,7 +53,7 @@ hrm_left: hrm_left {
     hold-while-undecided;
 };
 
-hrm_right: hrm_right {
+&hrm_right {
     compatible = "zmk,behavior-hold-tap";
     label = "HRM_RIGHT";
     bindings = <&kp>, <&kp>;
