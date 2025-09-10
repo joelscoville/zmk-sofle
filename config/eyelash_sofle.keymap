@@ -26,6 +26,51 @@
     trigger-period-ms = <16>;
 };
 
+// Tweak to taste
+#define HRM_TAP_TERM   200   /* max tap window */
+#define HRM_MIN_HOLD   120   /* minimum hold before hold is allowed */
+
+hrm_left: hrm_left {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HRM_LEFT";
+    bindings = <&kp>, <&kp>;
+    #binding-cells = <2>;
+
+    flavor = "tap-preferred";
+    tapping-term-ms = <HRM_TAP_TERM>;
+    quick_tap_ms = <HRM_TAP_TERM>;
+
+    /* Require a short hold before a hold is even possible */
+    hold-tap-wait-ms = <HRM_MIN_HOLD>;
+
+    /* Only opposite-hand keys can permit a hold */
+    hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 59 60 61 62 63>;
+
+    /* Important: no retro flip on release */
+    /* (omit) hold-trigger-on-release; */
+
+    /* Optional: keep undecided until we know (prevents early taps) */
+    hold-while-undecided;
+};
+
+hrm_right: hrm_right {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HRM_RIGHT";
+    bindings = <&kp>, <&kp>;
+    #binding-cells = <2>;
+
+    flavor = "tap-preferred";
+    tapping-term-ms = <HRM_TAP_TERM>;
+    quick_tap_ms = <HRM_TAP_TERM>;
+    hold-tap-wait-ms = <HRM_MIN_HOLD>;
+
+    hold-trigger-key-positions = <0 1 2 3 4 5 0 1 13 14 15 16 17 18 13 14 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
+
+    /* (omit) hold-trigger-on-release; */
+    hold-while-undecided;
+};
+
+
 &soft_off { hold-time-ms = <2000>; };
 
 / {
