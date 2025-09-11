@@ -1,0 +1,4 @@
+&kscan0 {
+    wakeup-source;
+    status = "okay";
+};
