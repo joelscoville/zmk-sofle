@@ -22,3 +22,95 @@
     col-offset = <7>;
 };
 
+{
+    /* Same rows as left: watch all rows so any key can wake */
+    wake_keys: gpio_keys {
+        compatible = "gpio-keys";
+
+        wake_r0: wake_r0 { label = "WAKE_R0";
+            gpios = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+        wake_r1: wake_r1 { label = "WAKE_R1";
+            gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+        wake_r2: wake_r2 { label = "WAKE_R2";
+            gpios = <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+        wake_r3: wake_r3 { label = "WAKE_R3";
+            gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+        wake_r4: wake_r4 { label = "WAKE_R4";
+            gpios = <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+    };
+
+    /* Drive RIGHT columns during soft off */
+    wake_trig_r0: wake_trig_r0 {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&wake_r0>;
+        wakeup-source;
+        extra-gpios = <
+            &gpio0 22 GPIO_ACTIVE_HIGH
+            &gpio0 29 GPIO_ACTIVE_HIGH
+            &gpio0 3  GPIO_ACTIVE_HIGH
+            &gpio0 28 GPIO_ACTIVE_HIGH
+            &gpio0 30 GPIO_ACTIVE_HIGH
+            &gpio0 21 GPIO_ACTIVE_HIGH
+            &gpio0 23 GPIO_ACTIVE_HIGH
+        >;
+    };
+    wake_trig_r1: wake_trig_r1 {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&wake_r1>;
+        wakeup-source;
+        extra-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH
+                       &gpio0 29 GPIO_ACTIVE_HIGH
+                       &gpio0 3  GPIO_ACTIVE_HIGH
+                       &gpio0 28 GPIO_ACTIVE_HIGH
+                       &gpio0 30 GPIO_ACTIVE_HIGH
+                       &gpio0 21 GPIO_ACTIVE_HIGH
+                       &gpio0 23 GPIO_ACTIVE_HIGH>;
+    };
+    wake_trig_r2: wake_trig_r2 {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&wake_r2>;
+        wakeup-source;
+        extra-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH
+                       &gpio0 29 GPIO_ACTIVE_HIGH
+                       &gpio0 3  GPIO_ACTIVE_HIGH
+                       &gpio0 28 GPIO_ACTIVE_HIGH
+                       &gpio0 30 GPIO_ACTIVE_HIGH
+                       &gpio0 21 GPIO_ACTIVE_HIGH
+                       &gpio0 23 GPIO_ACTIVE_HIGH>;
+    };
+    wake_trig_r3: wake_trig_r3 {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&wake_r3>;
+        wakeup-source;
+        extra-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH
+                       &gpio0 29 GPIO_ACTIVE_HIGH
+                       &gpio0 3  GPIO_ACTIVE_HIGH
+                       &gpio0 28 GPIO_ACTIVE_HIGH
+                       &gpio0 30 GPIO_ACTIVE_HIGH
+                       &gpio0 21 GPIO_ACTIVE_HIGH
+                       &gpio0 23 GPIO_ACTIVE_HIGH>;
+    };
+    wake_trig_r4: wake_trig_r4 {
+        compatible = "zmk,gpio-key-wakeup-trigger";
+        trigger = <&wake_r4>;
+        wakeup-source;
+        extra-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH
+                       &gpio0 29 GPIO_ACTIVE_HIGH
+                       &gpio0 3  GPIO_ACTIVE_HIGH
+                       &gpio0 28 GPIO_ACTIVE_HIGH
+                       &gpio0 30 GPIO_ACTIVE_HIGH
+                       &gpio0 21 GPIO_ACTIVE_HIGH
+                       &gpio0 23 GPIO_ACTIVE_HIGH>;
+    };
+
+    soft_off_wakeups: soft_off_wakeup_sources {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources =
+            <&wake_trig_r0 &wake_trig_r1 &wake_trig_r2 &wake_trig_r3 &wake_trig_r4>;
+    };
+};
