@@ -120,7 +120,7 @@
             bindings = <
 &kp ESC       &kp N1  &kp N2                   &kp N3                   &kp N4                       &kp N5            &kp UP_ARROW     &kp N6  &kp N7                        &kp N8                          &kp N9                    &kp N0    &kp BACKSLASH
 &kp TAB       &kp Q   &kp W                    &kp F                    &kp P                        &kp B             &kp DOWN_ARROW   &kp J   &kp L                         &kp U                           &kp Y                     &kp SEMI  &kp BACKSPACE
-&lt 1 ESCAPE  &kp A   &homerowleft LEFT_GUI R  &homerowleft LEFT_ALT S  &homerowleft LEFT_CONTROL T  &kp G             &kp LEFT_ARROW   &kp M   &homerowright LEFT_CONTROL N  &homerowright LEFT_ALT E        &homerowright LEFT_GUI I  &kp O     &kp APOS
+&lt 5 ESCAPE  &kp A   &homerowleft LEFT_GUI R  &homerowleft LEFT_ALT S  &homerowleft LEFT_CONTROL T  &kp G             &kp LEFT_ARROW   &kp M   &homerowright LEFT_CONTROL N  &homerowright LEFT_ALT E        &homerowright LEFT_GUI I  &kp O     &kp APOS
 &kp LSHFT     &kp Z   &kp X                    &kp C                    &kp D                        &kp V             &kp RIGHT_ARROW  &kp K   &kp H                         &kp COMMA                       &kp DOT                   &kp FSLH  &kp RIGHT_SHIFT
 &kp C_MUTE    &tog 3  &sl 4                    &key_repeat              &holdmod 3 SPACE             &kp LEFT_SHIFT    &kp ENTER        &mo 1   &holdmod 3 LA(BACKSPACE)      &homerowright LEFT_SHIFT ENTER  &sl 4                     &tog 2
             >;
@@ -159,8 +159,8 @@
             bindings = <
 &bt BT_CLR  &bt BT_PRV  &bt BT_NXT      &trans        &soft_off           &trans                   &trans  &trans        &trans          &trans          &trans           &trans     &trans
 &trans      &trans      &kp BACKSPACE   &kp UP_ARROW  &kp LS(LC(LA(F5)))  &kp LS(LA(LC(F1)))       &trans  &kp DOWN      &kp RIGHT       &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &trans
-&trans      &trans      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT           &kp LS(LA(LC(LG(D))))    &trans  &trans        &kp LC(LEFT)    &kp LC(RIGHT)   &mkp LCLK        &mkp RCLK  &trans
-&trans      &kp LG(Z)   &kp LG(X)       &kp LG(C)     &kp LG(V)           &trans                   &trans  &kp UP_ARROW  &kp LEFT_ARROW  &mmv MOVE_UP    &mmv MOVE_LEFT   &trans     &trans
+&trans      &sl 5       &kp LEFT_ARROW  &kp DOWN      &kp RIGHT           &kp LS(LA(LC(LG(D))))    &trans  &trans        &kp LC(LEFT)    &kp LC(RIGHT)   &mkp LCLK        &mkp RCLK  &trans
+&trans      &kp LG(Z)   &kp LG(X)       &kp LG(C)     &trans              &kp LG(V)                &trans  &kp UP_ARROW  &kp LEFT_ARROW  &mmv MOVE_UP    &mmv MOVE_LEFT   &trans     &trans
 &trans      &to 0       &trans          &trans        &trans              &kp LEFT_SHIFT           &trans  &trans        &trans          &trans          &trans           &trans
             >;
 
@@ -177,6 +177,18 @@
             >;
 
             label = "PROGRAMMING";
+        };
+
+        app {
+            bindings = <
+&trans  &trans                 &trans                 &trans                 &trans                 &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LA(LC(LG(LS(F))))  &kp LS(LA(LC(LG(P))))  &kp LS(LC(LA(LG(B))))    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(R))))  &kp LS(LC(LA(LG(S))))  &kp LS(LA(LC(LG(T))))  &kp LS(LA(LC(LG(G))))    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LC(LA(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(I))))  &kp LS(LC(LA(LG(V))))    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 0                  &trans                 &trans                 &trans                 &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "APP";
         };
     };
 };
