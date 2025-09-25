@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: 'Alt+$$mdi:backspace-reverse-outline$$', h: SYMBOLS}
+  - {t: 'Alt+$$mdi:backspace$$', h: SYMBOLS}
   - {t: '&key_repeat', h: SYSTEM}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: PROGRAMMING, h: '$$mdi:gesture-tap-hold$$'}
