@@ -148,15 +148,15 @@ layers:
   - Q
   - W
   - E
+  - R
   - T
-  - Y
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - Y
   - U
   - I
   - O
   - P
   - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
