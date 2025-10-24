@@ -28,7 +28,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: APP}
-  - A
+  - {t: A, h: PROGRAMMING}
   - {t: R, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
@@ -38,7 +38,7 @@ layers:
   - {t: N, h: '$$mdi:apple-keyboard-control$$'}
   - {t: E, h: '$$mdi:apple-keyboard-option$$'}
   - {t: I, h: '$$mdi:apple-keyboard-command$$'}
-  - O
+  - {t: O, h: PROGRAMMING}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -156,7 +156,7 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -185,8 +185,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: BASE, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
@@ -288,7 +288,7 @@ layers:
   - '&arrow'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
+  - {t: '!', type: held}
   - '*'
   - {t: /, s: '?'}
   - {t: '=', s: +}
@@ -298,7 +298,7 @@ layers:
   - (
   - )
   - {t: ;, s: ':'}
-  - '"'
+  - {t: '"', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -315,7 +315,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: BASE, h: toggle}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
