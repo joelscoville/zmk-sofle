@@ -420,7 +420,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&uc UC_DE_AE'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&uc UC_DE_SS'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
