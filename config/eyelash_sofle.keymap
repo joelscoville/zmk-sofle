@@ -27,6 +27,7 @@
 
 &uc {
   default-mode = <UC_MODE_MACOS>;  // Replace with desired input system.
+  minimum-length = <4>;
 };
 
 / {
@@ -209,11 +210,11 @@
 
         umlaut {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &uc UC_SET_WIN_COMPOSE  &trans  &trans  &trans    &trans  &uc UC_SET_LINUX_ALT  &trans  &uc UC_DE_UE   &trans  &trans  &trans
-&trans  &uc UC_DE_AE   &trans  &trans  &trans  &trans    &uc UC_SET_MACOS  &trans  &uc UC_SET_EMACS  &trans  &trans  &uc UC_DE_OE   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &uc UC_SET_WIN_COMPOSE  &trans  &trans  &trans    &trans  &trans &uc UC_SET_LINUX_ALT   &uc UC_DE_UE   &trans  &trans  &trans
+&trans  &uc UC_DE_AE   &trans  &trans  &trans  &trans         &trans  &uc UC_SET_MACOS &trans  &uc UC_SET_EMACS  &trans  &uc UC_DE_OE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "UMLAUT";
