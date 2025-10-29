@@ -212,7 +212,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &uc UC_SET_WIN_COMPOSE  &trans  &trans  &trans    &trans  &trans &uc UC_SET_LINUX_ALT   &uc UC_DE_UE   &trans  &trans  &trans
-&trans  &uc UC_DE_AE   &trans  &trans  &trans  &trans         &trans  &uc UC_SET_MACOS &trans  &uc UC_SET_EMACS  &trans  &uc UC_DE_OE   &trans
+&trans  &uc UC_DE_AE   &trans  &uc UC_DE_SS  &trans  &trans         &trans  &uc UC_SET_MACOS &trans  &uc UC_SET_EMACS  &trans  &uc UC_DE_OE   &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
             >;
