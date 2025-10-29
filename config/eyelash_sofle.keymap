@@ -130,7 +130,7 @@
         base {
             bindings = <
 &kp ESC       &kp N1        &kp N2                   &kp N3                   &kp N4                       &kp N5            &kp UP_ARROW     &kp N6                    &kp N7                        &kp N8                          &kp N9                    &kp N0        &kp BACKSLASH
-&kp TAB       &kp Q         &kp W                    &kp F                    &kp P                        &kp B             &kp DOWN_ARROW   &kp J                     &kp L                         &kp U                           &kp Y                     &kp SEMI      &kp BACKSPACE
+&kp TAB       &kp Q         &kp W                    &kp F                    &holdmod 6 P                 &kp B             &kp DOWN_ARROW   &kp J                     &kp L                         &kp U                           &kp Y                     &kp SEMI      &kp BACKSPACE
 &lt 5 ESCAPE  &holdmod 4 A  &homerowleft LEFT_GUI R  &homerowleft LEFT_ALT S  &homerowleft LEFT_CONTROL T  &kp G             &kp LEFT_ARROW   &kp M                     &homerowright LEFT_CONTROL N  &homerowright LEFT_ALT E        &homerowright LEFT_GUI I  &holdmod 4 O  &kp APOS
 &kp LSHFT     &kp Z         &kp X                    &kp C                    &kp D                        &kp V             &kp RIGHT_ARROW  &kp K                     &kp H                         &kp COMMA                       &kp DOT                   &kp FSLH      &homerowright RIGHT_SHIFT LA(BACKSPACE)
 &kp C_MUTE    &tog 3        &sl 4                    &key_repeat              &holdmod 3 SPACE             &kp LEFT_SHIFT    &kp ENTER        &holdmod 1 LA(BACKSPACE)  &homerow_repeat 3 0           &homerowright LEFT_SHIFT ENTER  &sl 4                     &tog 2
@@ -200,6 +200,18 @@
             >;
 
             label = "APP";
+        };
+
+        umlaut {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp U   &trans  &trans  &trans
+&trans  &kp A   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp O   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "UMLAUT";
         };
     };
 };
