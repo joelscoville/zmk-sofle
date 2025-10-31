@@ -74,8 +74,8 @@ layers:
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
-  - $$mdi:volume-high$$
   - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -406,19 +406,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&umlaut A'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&umlaut U', s: Sft+U}
+  - {t: '&umlaut U', s: '&umlaut LS(U)'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&umlaut A', s: Sft+A}
+  - {t: '&umlaut A', s: '&umlaut LS(A)'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&esset'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -428,7 +428,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&umlaut O', s: Sft+O}
+  - {t: '&umlaut O', s: '&umlaut LS(O)'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
