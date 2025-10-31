@@ -368,7 +368,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Hyper+Z
   - Hyper+X
-  - Hyper+C
+  - Hyper+J
   - Hyper+I
   - Hyper+V
   - {t: '$$mdi:transfer$$', type: trans}
@@ -406,34 +406,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_SET_WIN_COMPOSE'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_SET_LINUX_ALT'
-  - '&uc UC_DE_UE'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&umlaut U', s: Sft+U}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_DE_AE'
+  - {t: '&umlaut A', s: Sft+A}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_DE_SS'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_SET_MACOS'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_SET_EMACS'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc UC_DE_OE'
+  - '&esset'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&umlaut O', s: Sft+O}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -449,6 +444,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: BASE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
