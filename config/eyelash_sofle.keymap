@@ -115,7 +115,8 @@
         bindings = <&umlaut A>, <&kp LS(A)>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        keep-mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     O_Umlaut: O_Umlaut {
@@ -124,7 +125,8 @@
         bindings = <&umlaut O>, <&kp LS(O)>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        keep-mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     U_Umlaut: U_Umlaut {
@@ -133,7 +135,8 @@
         bindings = <&umlaut U>, <&kp LS(U)>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        keep-mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     behaviors {
@@ -159,7 +162,7 @@
         umlaut: umlaut {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp CARET &kp CARET &kp PERIOD>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp CARET &kp PERIOD &kp PERIOD>;
             label = "UMLAUT";
         };
 
@@ -251,11 +254,11 @@
 
         umlaut {
             bindings = <
-&trans  &trans     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &trans     &trans
-&trans  &trans     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &U_Umlaut  &trans  &trans     &trans
-&trans  &A_Umlaut  &trans  &esset  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &O_Umlaut  &trans
-&trans  &trans     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &trans     &trans
-&trans  &to 0      &trans  &trans  &trans  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans     &trans     &trans  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &trans     &trans
+&trans  &trans     &umlaut A  &trans  &trans  &trans            &trans  &trans  &trans  &U_Umlaut  &trans  &trans     &trans
+&trans  &A_Umlaut  &trans     &esset  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &O_Umlaut  &trans
+&trans  &trans     &trans     &trans  &trans  &trans            &trans  &trans  &trans  &trans     &trans  &trans     &trans
+&trans  &to 0      &trans     &trans  &trans  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans     &trans  &trans
             >;
 
             label = "UMLAUT";
