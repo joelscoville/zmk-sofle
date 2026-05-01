@@ -22,7 +22,7 @@
     col-offset = <7>;
 };
 
-{
+&{/} {
     /* Same rows as left: watch all rows so any key can wake */
     wake_keys: gpio_keys {
         compatible = "gpio-keys";
