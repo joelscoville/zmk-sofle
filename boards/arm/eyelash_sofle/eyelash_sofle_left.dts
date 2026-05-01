@@ -22,7 +22,7 @@
     status = "okay";
 };
 
-{
+&{/} {
     /* Watch every ROW (inputs in col2row) so any row can wake */
     wake_keys: gpio_keys {
         compatible = "gpio-keys";
